@@ -1,0 +1,9 @@
+[user]
+	name = nathanborgo
+	email = nathan.borgo@gmail.com
+[rerere]
+	enabled = true
+[core]
+	excludesfile = ~/.gitignore
+[push]
+	default = matching
