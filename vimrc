@@ -29,6 +29,8 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+" Git commit configuration: https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message
+autocmd Filetype gitcommit setlocal spell textwidth=72
 
 
 

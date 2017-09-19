@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/nathan/code/parkwhiz/parkwhiz.com/www'
-let g:netrw_dirhist_2='/Users/nathan/code/parkwhiz/parkwhiz.com/www/css-refactor'
-let g:netrw_dirhist_3='/Users/nathan/code/parkwhiz/parkwhiz.com/www/css-refactor/components'
-let g:netrw_dirhist_4='/Users/nathan/code/parkwhiz/parkwhiz.com'
-let g:netrw_dirhist_5='/Users/nathan/code/parkwhiz/parkwhiz.com/docker-dev'
-let g:netrw_dirhist_6='/Users/nathan/code/parkwhiz/parkwhiz.com'
-let g:netrw_dirhist_7='/Users/nathan/code/parkwhiz/parkwhiz.com/docker-dev'
-let g:netrw_dirhist_8='/Users/nathan/code/parkwhiz/parkwhiz.com'
-let g:netrw_dirhist_9='/Users/nathan'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/nathan/code/parkwhiz/selenium_tests/spec'
+let g:netrw_dirhist_2='/Users/nathan/code/parkwhiz/selenium_tests/spec/helpers'
