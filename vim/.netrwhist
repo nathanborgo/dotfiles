@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/nathan/code/parkwhiz/selenium_tests/spec'
-let g:netrw_dirhist_2='/Users/nathan/code/parkwhiz/selenium_tests/spec/helpers'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/nathan/code/funsies/dashboard'
+let g:netrw_dirhist_2='/Users/nathan/code/funsies/dashboard/jobs'
+let g:netrw_dirhist_3='/Users/nathan/code/parkwhiz/parkwhiz.com/www/css-refactor/components'
+let g:netrw_dirhist_4='/Users/nathan/code/parkwhiz/parkwhiz.com/www/css-refactor'
+let g:netrw_dirhist_5='/Users/nathan/code/parkwhiz/parkwhiz.com/www/css-refactor/building-blocks'

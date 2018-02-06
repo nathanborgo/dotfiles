@@ -5,7 +5,7 @@ fi
 
 # Go paths
 export GOPATH=$HOME/code/go
-export GOROOT=/usr/local/opt/go/libexec
+# export GOROOT=/usr/local/opt/go/libexec
 export GOBIN=$HOME/code/go/bin
 
 # Postgress.app
