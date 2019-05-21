@@ -1,7 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/nathan/code/funsies/dashboard'
-let g:netrw_dirhist_2='/Users/nathan/code/funsies/dashboard/jobs'
-let g:netrw_dirhist_3='/Users/nathan/code/parkwhiz/parkwhiz.com/www/css-refactor/components'
-let g:netrw_dirhist_4='/Users/nathan/code/parkwhiz/parkwhiz.com/www/css-refactor'
-let g:netrw_dirhist_5='/Users/nathan/code/parkwhiz/parkwhiz.com/www/css-refactor/building-blocks'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/nathan/code/parkwhiz/seller_api'
+let g:netrw_dirhist_2='/Users/nathan/code/parkwhiz/workers'
+let g:netrw_dirhist_3='/Users/nathan/code/parkwhiz/central-env'
+let g:netrw_dirhist_4='/Users/nathan/code/parkwhiz/central-env/new'
+let g:netrw_dirhist_5='/Users/nathan/code/parkwhiz/central-env/new/workers'
+let g:netrw_dirhist_6='/Users/nathan/code/parkwhiz/central-env'
+let g:netrw_dirhist_7='/Users/nathan/code/parkwhiz/central-env/gl7'
+let g:netrw_dirhist_8='/Users/nathan/code/parkwhiz/central-env/gl7/workers'

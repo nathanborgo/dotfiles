@@ -5,10 +5,9 @@ fi
 
 # Go paths
 export GOPATH=$HOME/code/go
-# export GOROOT=/usr/local/opt/go/libexec
 export GOBIN=$HOME/code/go/bin
 
-# Postgress.app
+# Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 # OpenSSL
@@ -27,7 +26,25 @@ unsetopt inc_append_history
 unsetopt share_history
 
 # Parkwhiz.com docker
-alias start_pw='docker run -d -v /tmp:/tmp -v $PW_CODE_DIR:/var/domains/api.parkwhiz.com -v /etc/hosts:/etc/hosts -v $PW_CODE_DIR/nginx:/etc/nginx/sites-enabled/ -v $PW_CODE_DIR/logs:/var/domains/logs -t -p 80:80 -p 443:443 -p 8080:8080 -i parkwhiz/php-app:1.0.5 /opt/bin/start_all'
+alias start_pw='sh ~/code/parkwhiz/parkwhiz.com/scripts/start_local_container'
+
+# Helpful aliases
+alias be="bundle exec "
+alias psqlnew="psql --host=db2.db.prod.parkwhiz.com --port=5432 --username=nborgo --dbname=parkwhiz_prod"
+alias psqlgl1="psql --host=db1.db.internal.gl1.parkwhiz.com --port=5432 --username postgres --dbname=parkwhiz_prod"
+alias psqlgl2="psql --host=db1.db.internal.gl2.parkwhiz.com --port=5432 --username postgres --dbname=parkwhiz_prod"
+alias psqlgl3="psql --host=db1.db.internal.gl3.parkwhiz.com --port=5432 --username postgres --dbname=parkwhiz_prod"
+alias psqlgl4="psql --host=db1.db.internal.gl4.parkwhiz.com --port=5432 --username postgres --dbname=parkwhiz_prod"
+alias psqlgl5="psql --host=db1.db.internal.gl5.parkwhiz.com --port=5432 --username postgres --dbname=parkwhiz_prod"
+alias psqlgl6="psql --host=db1.db.internal.gl6.parkwhiz.com --port=5432 --username postgres --dbname=parkwhiz_prod"
+alias psqlgl7="psql --host=db1.db.internal.gl7.parkwhiz.com --port=5432 --username postgres --dbname=parkwhiz_prod"
+alias psqlgl8="psql --host=db1.db.internal.gl8.parkwhiz.com --port=5432 --username postgres --dbname=parkwhiz_prod"
+alias psqlgl9="psql --host=db1.db.internal.gl9.parkwhiz.com --port=5432 --username postgres --dbname=parkwhiz_prod"
+alias psqllocal="psql -d pw_admin_development"
+alias redisgl1="redis-cli -h redis1.elasticache.internal.gl1.parkwhiz.com -p 6379"
+alias redisgl2="redis-cli -h redis1.elasticache.internal.gl2.parkwhiz.com -p 6379"
+alias redisgl3="redis-cli -h redis1.elasticache.internal.gl3.parkwhiz.com -p 6379"
+alias redisgl4="redis-cli -h redis1.elasticache.internal.gl4.parkwhiz.com -p 6379"
 
 # Helpful functions
 function de() {
@@ -39,5 +56,11 @@ function deo() {
 function trash() {
   mv $1 ~/.Trash
 }
+function deploy() {
+  ~/code/parkwhiz/deploy/deploy.rb release
+}
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#Other things that I don't know about.
+export PATH="$PATH:$HOME/.rvm/bin"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
